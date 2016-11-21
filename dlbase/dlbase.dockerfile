@@ -27,7 +27,7 @@ RUN npm install --production
 # Bundle app source
 COPY . $APP
 ONBUILD COPY ./data $APP/data
-ONBUILD COPY ./extend $APP/extend
+
 
 EXPOSE 3000
 CMD [ "npm", "start", "--production", "--noquery" ]
